@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import './pizza.css'
-import PizzaOrderingApp from './PizzaToppings'
-import data from './data'
+import './survay.css'
+import Survey from './Survay'
 
 function App() {
-  
+  const [count, setCount] = useState(0)
+
   return (
     <div className="App">
-    <PizzaOrderingApp data={data} />
+     <Survey/>
     </div>
   )
 }
